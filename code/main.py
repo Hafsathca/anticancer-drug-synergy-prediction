@@ -19,18 +19,11 @@ from model import get_model
 from method_config import *
 
 
-##### logging #####
-# 1. need to include more drugs and change the major drug id from NSC to drug name
-# 2. need to tune parameters of each compared models
-# 3. 
-###############
-
 SYNERGY_THRES = 10
 BATCH_SIZE = 256
 N_EPOCHS = 200
 PATIENCE = 30
 
-# global configuration dictionary 
 
 
 available_feat_type_list = {'NCI_60':['met','mut','cop','exp']}
