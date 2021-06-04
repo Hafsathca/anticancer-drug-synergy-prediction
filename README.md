@@ -1,1 +1,1 @@
-# anticancer-drug-synergy-prediction
+# Anticancer-drug-synergy-prediction
