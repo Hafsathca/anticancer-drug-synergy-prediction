@@ -8,6 +8,17 @@ Here includes the code and data used for comparing several published machine lea
 
 You can download the data we used for comparison from here <a href="https://www.dropbox.com/s/7tr009a4aw3t4xk/data.zip?dl=0" target="_blank">data</a>. Please Download the datasets and put the data folder in the same path as the code folder.
 
+## Requirement
+
+Models are implemented using Python 3.6, and requires following packages:      
+- Numpy      
+- Pandas
+- tqdm
+- bisect
+- scikit-learn
+- tensorflow
+- keras
+
 ## Steps
 
 Step 1: decompress data files           
