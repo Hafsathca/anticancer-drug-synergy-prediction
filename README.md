@@ -16,5 +16,5 @@ Step 1: decompress data files
 Step 2: run different models       
 > cd code       
 > python main.py deepsynergy_preuer_2018     
-> note: 'deepsynergy_preuer_2018' is one of the models we implemented. You can run other models by replacing 'deepsynergy_preuer_2018' with other names listed in `code/method_config.py`.  
+note: 'deepsynergy_preuer_2018' is one of the models we implemented. You can run other models by replacing 'deepsynergy_preuer_2018' with other names listed in `code/method_config.py`.  
 
