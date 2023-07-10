@@ -290,7 +290,7 @@ def main(method):
     model, X_test, Y_test = training(X_cell, X_drug, Y)
     print("training finished")
     val_results = evaluate(model, X_test, Y_test)
-
+    os.makedirs("results", exist_ok=True)
     # save results
     rand_num = random.randint(1,1000000)
     with open("results/%s_%s.json"%(method, str(rand_num)), "w") as f:
