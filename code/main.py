@@ -39,8 +39,10 @@ def prepare_data():
     print(synergy_data)
     cell_data_dicts = input_cellline_data(config['cell_data'])
     print("cell line feats loaded")
+    print(cell_data_dicts)
     drug_data_dicts = input_drug_data()
     print("drug feats loaded")
+    print(drug_data_dicts)
 
     # get full drug list and cell line list
     drug_list = synergy_data['drug1'].unique().tolist()
