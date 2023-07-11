@@ -36,7 +36,7 @@ available_cancer_specific_cell_list = {'NCI_60':{'TNBC':['MDA-MB-231','MDA-MB-43
 def prepare_data():
     synergy_data = input_synergy_data(config['synergy_data'])
     print("synergy data loaded")
-    print(synergy data)
+    print(synergy_data)
     cell_data_dicts = input_cellline_data(config['cell_data'])
     print("cell line feats loaded")
     drug_data_dicts = input_drug_data()
