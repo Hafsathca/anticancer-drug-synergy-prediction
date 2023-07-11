@@ -290,6 +290,18 @@ def main(method):
     model, X_test, Y_test = training(X_cell, X_drug, Y)
     print("training finished")
     val_results = evaluate(model, X_test, Y_test)
+
+    # save results
+    rand_num = random.randint(1,1000000)
+    with open("results/%s_%s.json"%(method, str(rand_num)), "w") as f:
+        json.dump(val_results, f)
+        
+'''def main(method):
+    X_cell, X_drug, Y = prepare_data()
+    print("data loaded")
+    model, X_test, Y_test = training(X_cell, X_drug, Y)
+    print("training finished")
+    val_results = evaluate(model, X_test, Y_test)
     os.makedirs("results", exist_ok=True)
     # save results
     rand_num = random.randint(1,1000000)
@@ -297,7 +309,7 @@ def main(method):
     with open("results/%s_%s.json"%(method, str(rand_num)), "w") as f:
         json.dump(val_results, f)
     #with open("results/abc.json, "w") as f:
-      #  json.dump(val_results, f)
+      #  json.dump(val_results, f)'''
 
 
 if __name__ == "__main__":
