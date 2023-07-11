@@ -294,8 +294,8 @@ def main(method):
     # save results
     rand_num = random.randint(1,1000000)
    # with open("results/%s_%s.json"%(method, str(rand_num)), "w") as f:
-         with open("results/abc.json, "w") as f:
-         json.dump(val_results, f)
+    with open("results/abc.json, "w") as f:
+    json.dump(val_results, f)
 
 
 if __name__ == "__main__":
